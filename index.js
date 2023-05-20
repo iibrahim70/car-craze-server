@@ -25,7 +25,7 @@ async function run() {
     // Connect the client to the server	(optional starting in v4.7)
     await client.connect();
 
-    
+    const toysCollection = client.db('toysDB').collection('toys');
 
     app.post('/toys', async (req, res) => {
       const newToys = req.body; 
