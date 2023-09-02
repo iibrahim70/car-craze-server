@@ -25,9 +25,9 @@ async function run() {
     // Connect the client to the server	(optional starting in v4.7)
     // await client.connect();
 
-    const carsCollection = client.db("carsDB").collection("cars");
-    const reviewsCollection = client.db("carsDB").collection("reviews");
-    const newCarsCollection = client.db("carsDB").collection("newArrivals");
+    const carsCollection = client.db("carDB").collection("cars");
+    const reviewsCollection = client.db("carDB").collection("reviews");
+    const newCarsCollection = client.db("carDB").collection("newArrivals");
 
     // get all the cars
     app.get("/cars", async (req, res) => {
